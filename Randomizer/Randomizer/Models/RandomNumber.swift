@@ -8,8 +8,9 @@
 import Foundation
 
 struct RandomNumber {
-    let minimumValue: Int
-    let maximumValue: Int
+    
+    var minimumValue: Int
+    var maximumValue: Int
     
     var getRandom: Int {
         Int.random(in: minimumValue...maximumValue)
