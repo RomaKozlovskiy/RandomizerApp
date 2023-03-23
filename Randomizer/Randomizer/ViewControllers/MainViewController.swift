@@ -21,13 +21,11 @@ class MainViewController: UIViewController {
     
     private var randomNumber = RandomNumber(minimumValue: 0, maximumValue: 100)
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         getRandomNumberButton.layer.cornerRadius = 10
         minimumValueLabel.text = randomNumber.minimumValue.formatted()
         maximumValueLabel.text = randomNumber.maximumValue.formatted()
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -41,7 +39,6 @@ class MainViewController: UIViewController {
         randomValueLabel.text = randomNumber.getRandom.formatted()
     }
 }
-
 // MARK: - SettingsViewControllerDelegate
 extension MainViewController: SettingsViewControllerDelegate {
     func setNewValue(for randomNumber: RandomNumber) {
@@ -49,6 +46,4 @@ extension MainViewController: SettingsViewControllerDelegate {
         maximumValueLabel.text = randomNumber.maximumValue.formatted()
         self.randomNumber = randomNumber
     }
-    
-    
 }

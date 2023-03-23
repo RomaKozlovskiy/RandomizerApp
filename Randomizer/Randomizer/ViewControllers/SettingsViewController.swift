@@ -8,7 +8,7 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    
     @IBOutlet var minimumNumberTF: UITextField!
     @IBOutlet var maximumNumberTF: UITextField!
     

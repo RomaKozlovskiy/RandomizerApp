@@ -8,7 +8,6 @@
 import Foundation
 
 struct RandomNumber {
-    
     var minimumValue: Int
     var maximumValue: Int
     
